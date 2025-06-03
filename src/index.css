@@ -1,0 +1,11 @@
+/* If installed via npm */
+@import "@fontsource/medievalsharp";
+/* Tailwind import */
+@import "tailwindcss";
+
+/* Apply MedievalSharp globally */
+@layer base {
+  html {
+    font-family: "MedievalSharp", cursive, "Segoe UI", sans-serif;
+  }
+}
