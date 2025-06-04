@@ -10,7 +10,7 @@ export interface Biome {
   bossHunt: string;
   resources: string;
   hazards: string;
-  image?: string;
+  image: string;
 }
 
 // Biome data
@@ -62,6 +62,8 @@ const biomes: Biome[] = [
   {
     id: 5,
     title: "Twilight Jungle",
+    image: "/images/biomes/TwilightJungle.png",
+
     category: "Dense Tropical Nightmare",
     setting: "Bioluminescent flora, endless canopy, hostile ecosystem.",
     monsters: "Poison frogs, panthers, mind-bugs, sapient plants.",
@@ -72,6 +74,8 @@ const biomes: Biome[] = [
   {
     id: 6,
     title: "Shattered Bastion",
+    image: "/images/biomes/ShatteredBastion.png",
+
     category: "Ruined Urban Wasteland",
     setting: "Fallen cities, arcane reactors, overgrown machinery.",
     monsters: "Constructs, corrupted spirits, scavenger gangs.",
@@ -82,6 +86,8 @@ const biomes: Biome[] = [
   {
     id: 7,
     title: "Blightmoor Swamp",
+    image: "/images/biomes/BlightmoorSwamp.png",
+
     category: "Plagued Wetlands",
     setting: "Black water, rotting trees, undead lurking in the fog.",
     monsters: "Zombies, necromantic beasts, swamp hags, giant leeches.",
@@ -92,6 +98,8 @@ const biomes: Biome[] = [
   {
     id: 8,
     title: "Hollow Depths",
+    image: "/images/biomes/HollowDepths.png",
+
     category: "Ancient Underground World",
     setting: "Massive caverns, glowing fungi, lost dwarven halls.",
     monsters: "Cave trolls, bats, kobolds, ancient cursed machines.",
@@ -113,7 +121,7 @@ const Biomes: React.FC = () => {
             backgroundImage: biome.image ? `url(${biome.image})` : undefined,
           }}
         >
-          <div className="absolute inset-0 bg-black/50 rounded-lg"></div>{" "}
+          <div className="absolute inset-0 bg-black/30 rounded-lg"></div>{" "}
           {/* Overlay */}
           <div className="relative z-10">
             <h2 className="text-xl font-semibold mb-2">{biome.title}</h2>
