@@ -116,9 +116,7 @@ const Biomes: React.FC = () => {
           <div className="absolute inset-0 bg-black/50 rounded-lg"></div>{" "}
           {/* Overlay */}
           <div className="relative z-10">
-            <h2 className="text-xl font-semibold mb-2">
-              {biome.id}. {biome.title}
-            </h2>
+            <h2 className="text-xl font-semibold mb-2">{biome.title}</h2>
             <p className="italic mb-2">({biome.category})</p>
             <ul className="space-y-1 text-sm">
               <li>
